@@ -8,10 +8,15 @@ export const AppState = reactive({
 
   /** @type {import('./models/Spell.js').Spell[]} */
   spells: [],
-  
+
   /** @type {import('./models/SpellDetail.js').SpellDetail | null} */
   activeSpell: null,
 
   /** @type {import('./models/Character.js').Character[]} */
   characters: [],
+
+
+  classChoices:[
+    'barbarian','bard','cleric','druid','fighter','monk','paladin','ranger','rogue','sorcerer','warlock','wizard'
+  ]
 });
