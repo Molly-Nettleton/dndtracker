@@ -7,7 +7,7 @@ export class Character {
     this.classes = data.classes;
     this.race = data.race;
     this.subclasses = data.subclasses;
-    this.abilityScores=data.abilityScores
+    // this.abilityScores=data.abilityScores
     this.background=data.background
 
   }

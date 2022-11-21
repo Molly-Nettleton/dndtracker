@@ -8,7 +8,7 @@ public class AbilityScores : IDbItem<int>
   public int Con { get; set; }
   public int Intel { get; set; }
   public int Wis { get; set; }
-  public int Char { get; set; }
+  public int Charisma { get; set; }
   public DateTime CreatedAt { get; set; }
   public DateTime UpdatedAt { get; set; }
 }

@@ -18,7 +18,6 @@ public class CharactersRepository : BaseRepository
               secondClass,
               subclasses,
               race,
-              abilityScores,
               background,
               creatorId
              )
@@ -30,7 +29,6 @@ public class CharactersRepository : BaseRepository
               @MainClass,
               @SecondClass,
               @Race,
-              @AbilityScores,
               @Background,
               @CreatorId
              );
