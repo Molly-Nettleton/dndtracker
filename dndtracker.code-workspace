@@ -1,0 +1,60 @@
+
+{
+  "folders": [
+    {
+      "path": "dndtracker.client",
+      "name": "client"
+    },
+    {
+      "path": "dndtracker",
+      "name": "server"
+    },{"path":".github/workflows", "name":"workflows"}
+  ],
+  "settings": {
+    "editor.suggestSelection": "first",
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "javascript.referencesCodeLens.enabled": true,
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "typescript.implementationsCodeLens.enabled": true,
+    "typescript.referencesCodeLens.enabled": true,
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
+    "files.exclude": {
+      "**/.nyc_*": true,
+      "**/coverage": true,
+      "**/node_modules": true
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "vetur.format.defaultFormatter.js": "vscode-typescript",
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.codeActionsOnSave.mode": "all",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "workbench.colorCustomizations": {
+      "activityBar.activeBackground": "#a2b29e",
+      "activityBar.background": "#a2b29e",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#586ec7",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "commandCenter.border": "#15202b99",
+      "sash.hoverBorder": "#a2b29e",
+      "statusBar.background": "#879b82",
+      "statusBar.foreground": "#15202b",
+      "statusBarItem.hoverBackground": "#6d8268",
+      "statusBarItem.remoteBackground": "#879b82",
+      "statusBarItem.remoteForeground": "#15202b",
+      "titleBar.activeBackground": "#879b82",
+      "titleBar.activeForeground": "#15202b",
+      "titleBar.inactiveBackground": "#879b8299",
+      "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#879b82"
+  }
+}
