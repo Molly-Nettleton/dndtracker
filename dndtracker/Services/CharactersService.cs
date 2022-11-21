@@ -5,5 +5,8 @@ public class CharactersService : BaseRepository
   {
   }
 
-  
+  internal Character CreateCharacter(Character characterData)
+  {
+    throw new NotImplementedException();
+  }
 }
