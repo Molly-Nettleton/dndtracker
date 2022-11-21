@@ -12,6 +12,8 @@ public class Character : IHasCreator
   public AbilityScores AbilityScores { get; set; }
   public string Background { get; set; }
 
+  
+
   // Populated
   public string CreatorId { get; set; }
   public Profile Creator { get; set; }
@@ -20,12 +22,16 @@ public class Character : IHasCreator
   public DateTime UpdatedAt { get; set; }
 }
 
-public class AbilityScores
+
+public class AbilityScores : IDbItem<int>
 {
+  public int Id { get; set; }
   public int Str { get; set; }
   public int Dex { get; set; }
   public int Con { get; set; }
-  public int Int { get; set; }
+  public int Intel { get; set; }
   public int Wis { get; set; }
-  public int Cha { get; set; }
+  public int Char { get; set; }
+  public DateTime CreatedAt { get; set; }
+  public DateTime UpdatedAt { get; set; }
 }

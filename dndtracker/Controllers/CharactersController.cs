@@ -3,7 +3,7 @@ namespace dndtracker.Controllers;
 [Route("api/[controller]")]
 public class CharactersController : IController
 {
-  private readonly CharactersService _cs;
+  protected readonly CharactersService _cs;
   public CharactersController(Auth0Provider auth0Provider) : base(auth0Provider)
   {
   }

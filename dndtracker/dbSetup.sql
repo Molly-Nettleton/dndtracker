@@ -17,11 +17,24 @@ CREATE TABLE
         updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last Update',
         name varchar(255),
         level INT,
-        classes varchar(255),
-        picture varchar(255)
+        class JSON,
+        subClass JSON,
+        race VARCHAR(255),
+        background VARCHAR(255),
+        hp varchar(255),
     ) default charset utf8 COMMENT '';
 
 CREATE TABLE
     IF NOT EXISTS abilityScores(
-      INT
-    )default charset utf8 COMMENT '';
+        id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+        createdAt DATETIME DEFAULT CURRENT_TIMESTAMP COMMENT 'Time Created',
+        updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Last Update',
+        str INT,
+        dex INT,
+        con INT,
+        intel INT,
+        wis INT,
+        char INT,
+    ) default charset utf8 COMMENT '';
+
+    
