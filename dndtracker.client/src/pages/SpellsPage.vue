@@ -4,7 +4,7 @@
       <section class="start-bar bg-dark text-light overflow-auto">
         <h4 class="p-3">Spells</h4>
         <div id="dnd-spells" v-for="s in spells">
-          <span @click="getSpellDetails()">{{ s.name }}</span>
+          <span @click="getSpellDetails(s)">{{ s.name }}</span>
         </div>
       </section>
       <section class="main-content p-3">
@@ -31,13 +31,7 @@ import { spellsService } from "../services/SpellsService.js";
 import Pop from "../utils/Pop.js";
 
 export default {
-  props: {
-    spell: {
-      type: Spell,
-      required: true,
-    }
-  },
-  setup(props) {
+  setup() {
     onMounted(() => {
       getSpells()
     });
@@ -51,9 +45,10 @@ export default {
     return {
       spells: computed(() => AppState.spells),
 
-      async getSpellDetails() {
+      async getSpellDetails(s) {
         try {
-          await spellsService.setActiveSpell(props.spell.name)
+          // let name = props.spell.name
+          await spellsService.setActiveSpell(s.index)
         } catch (error) {
           console.error('[]', error)
           Pop.error(error)

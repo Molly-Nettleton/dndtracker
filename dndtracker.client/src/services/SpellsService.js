@@ -11,8 +11,10 @@ class SpellsService {
   }
 
   async setActiveSpell(spell) {
-    const res = await api.get(`api/spells/${spell}`)
-    AppState.activeSpell = new SpellDetail(res.data)
+    console.log(spell);
+    const res = await DND.get(`api/spells/${spell}`)
+    console.log(res.data);
+    // AppState.activeSpell = new SpellDetail(res.data)
     console.log(AppState.activeSpell)
   }
 }
