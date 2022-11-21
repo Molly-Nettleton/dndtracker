@@ -8,12 +8,12 @@
         </div>
       </section>
       
-      <section class=" col-md-6 main-content p-3 d-flex align-items-center justify-content-center">
+      <section class=" col-md-6 main-content start-bar  d-flex align-items-center justify-content-center">
         <div id="active-spell">
           <ActiveSpellCard />
         </div>
       </section>
-      <section class="col-md-2 end-bar bg-dark text-light flex-grow-1 spellbook">
+      <section class="col-md-2 end-bar start-bar  bg-dark text-light flex-grow-1 spellbook">
         <h4 class="p-3 ">Your Spells 📖 <span id="spell-count"></span></h4>
         <div id="spell-slots">
 
