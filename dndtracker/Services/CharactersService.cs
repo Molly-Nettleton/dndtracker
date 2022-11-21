@@ -1,12 +1,14 @@
 namespace dndtracker.Services;
-public class CharactersService : BaseRepository
+public class CharactersService 
 {
-  public CharactersService(IDbConnection db) : base(db)
+private readonly CharactersRepository _characterRepo;
+public CharactersService(CharactersRepository characterRepo)
   {
+    _characterRepo = characterRepo;
   }
 
   internal Character CreateCharacter(Character characterData)
   {
-    throw new NotImplementedException();
+   return _characterRepo.CreateCharacter(characterData);
   }
 }

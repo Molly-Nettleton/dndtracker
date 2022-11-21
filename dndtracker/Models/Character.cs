@@ -4,11 +4,13 @@ public class Character : IHasCreator
 
   public string Name { get; set; }
   public int Level { get; set; }
-  public string[] Class { get; set; }
-  public string[] SubClass { get; set; }
+  public int Hp { get; set; }
+  public string img { get; set; }
+  public string[] Classes { get; set; }
+  public string[] SubClasses { get; set; }
   public string Race { get; set; }
+  public AbilityScores AbilityScores { get; set; }
   public string Background { get; set; }
-  public AbilityScore AbilityScore { get; set; }
 
   // Populated
   public string CreatorId { get; set; }
@@ -18,7 +20,7 @@ public class Character : IHasCreator
   public DateTime UpdatedAt { get; set; }
 }
 
-public class AbilityScore
+public class AbilityScores
 {
   public int Str { get; set; }
   public int Dex { get; set; }

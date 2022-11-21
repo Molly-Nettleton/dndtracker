@@ -10,21 +10,22 @@ public class CharactersController : IController
 
 
 
-    [HttpPost]
-   [Authorize]
-    public async Task<ActionResult<Character>> CreateCharacter([FromBody] Character characterData)
+  [HttpPost]
+  [Authorize]
+  public async Task<ActionResult<Character>> CreateCharacter([FromBody] Character characterData)
+  {
+    try
     {
-      try
-      {
-        var userInfo = await _auth0Provider.GetUserInfoAsync<Account>(HttpContext);
-        Character character = _cs.CreateCharacter(characterData);
-        return Ok(character);
-      }
-      catch (Exception e)
-      {
-        return BadRequest(e.Message);
-      }
+      var userInfo = await _auth0Provider.GetUserInfoAsync<Account>(HttpContext);
+      characterData.CreatorId = userInfo.Id;
+      Character character = _cs.CreateCharacter(characterData);
+      return Ok(character);
     }
+    catch (Exception e)
+    {
+      return BadRequest(e.Message);
+    }
+  }
 
 
 
