@@ -9,9 +9,10 @@
       </section>
       <section class="main-content p-3">
         <div id="active-spell">
+          <ActiveSpellCard />
         </div>
       </section>
-      <section class="end-bar bg-dark text-light flex-grow-1">
+      <section class="end-bar bg-dark text-light flex-grow-1 spellbook">
         <h4 class="p-3 ">Your Spells 📖 <span id="spell-count"></span></h4>
         <div id="spell-slots">
 
@@ -64,5 +65,9 @@ export default {
 <style lang="scss" scoped>
 .start-bar {
   height: 649px
+}
+
+.spellbook {
+  width: 100px;
 }
 </style>
