@@ -4,7 +4,7 @@
       <section class=" col-md-2 start-bar bg-dark text-light overflow-auto">
         <h4 class="p-3">Spells</h4>
         <div id="dnd-spells" v-for="s in spells">
-          <span @click="getSpellDetails(s)">{{ s.name }}</span>
+          <span @click="getSpellDetails(s)">{{ s?.name }}</span>
         </div>
       </section>
       <section class=" col-md-6 main-content p-3 d-flex align-items-center justify-content-center">

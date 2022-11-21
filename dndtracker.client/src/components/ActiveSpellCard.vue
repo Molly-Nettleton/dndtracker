@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-danger">
+  <div class="card bg-danger spellcard" v-if="spell">
     <h3 class="text-center text-dark bg-white mt-3 p-1 mb-0 rounded-top">{{ spell?.name }}</h3>
     <p class="bg-danger text-white text-center mb-0">{{ spell?.school.name }}, Level {{ spell?.level }}</p>
     <div class="row">
@@ -18,7 +18,9 @@
       <div class="col-6 text-center">
         <div class="bg-white">
           <h5 class="text-danger">Components</h5>
-          <div class="d-flex justify-content-center"><p class="text-dark mx-2" v-for="c in spell.components">{{c}}</p></div>
+          <div class="d-flex justify-content-center">
+            <p class="text-dark mx-2 mb-0" v-for="c in spell.components">{{ c }}</p>
+          </div>
         </div>
       </div>
       <div class="col-6 text-center">
@@ -59,5 +61,8 @@ export default {
 
 
 <style lang="scss" scoped>
+.spellcard{
+width: 600px;
+}
 
 </style>
