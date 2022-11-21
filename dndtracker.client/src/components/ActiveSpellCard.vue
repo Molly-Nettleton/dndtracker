@@ -1,7 +1,11 @@
 <template>
-  <div class="card bg-danger spellcard" v-if="spell">
+  <div 
+  :class="spell.school.color"
+  class="card  spellcard" v-if="spell">
     <h3 class="text-center text-dark bg-white mt-3 p-1 mb-0 rounded-top">{{ spell?.name }}</h3>
-    <p class="bg-danger text-white text-center mb-0">{{ spell?.school.name }}, Level {{ spell?.level }}</p>
+    <p 
+    :class="spell.school.color"
+    class=" text-white text-center mb-0">{{ spell?.school.name }}, Level {{ spell?.level }}</p>
     <div class="row">
       <div class="col-6 text-center ">
         <div class="bg-white">
