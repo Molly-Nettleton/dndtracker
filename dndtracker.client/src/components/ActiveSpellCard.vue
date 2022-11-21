@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-3 bg-danger">
+  <div class="card bg-danger">
     <h3 class="text-center text-dark bg-white mt-3 p-1 mb-0 rounded-top">{{ spell?.name }}</h3>
     <p class="bg-danger text-white text-center mb-0">{{ spell?.school }} {{ spell?.level }}</p>
     <div class="row">
