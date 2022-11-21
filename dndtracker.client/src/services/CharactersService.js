@@ -9,6 +9,8 @@ class CharactersService {
     AppState.characters.push(new Character(res.data));
   }
 
-  
+  async editCharacter(data){
+    const res = api.put(`api/characters/${id}`,data)
+  }
 }
 export const charactersService = new CharactersService();

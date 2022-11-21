@@ -14,7 +14,9 @@ class AccountService {
 
 
 
-  
+  async getAccountCharacters(){
+    const res = await api.get(`/account/characters`)
+  }
 }
 
 export const accountService = new AccountService()
