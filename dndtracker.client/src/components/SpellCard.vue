@@ -52,7 +52,15 @@
 
 
 <script>
+import { SpellDetail } from "../models/SpellDetail.js";
+
 export default {
+  props: {
+    spell: {
+      type: SpellDetail,
+      required: true
+    }
+  },
   setup(){
     return {}
   }
