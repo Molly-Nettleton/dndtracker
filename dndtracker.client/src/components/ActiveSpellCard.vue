@@ -1,7 +1,7 @@
 <template>
   <div 
   :class="spell.school.color"
-  class="card  spellcard" v-if="spell">
+  class="card  spellcard px-3" v-if="spell">
     <h3 class="text-center text-dark bg-white mt-3 p-1 mb-0 rounded-top">{{ spell?.name }}</h3>
     <p 
     :class="spell.school.color"
