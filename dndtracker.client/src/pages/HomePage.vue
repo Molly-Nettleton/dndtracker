@@ -63,15 +63,15 @@ import { spellsService } from "../services/SpellsService.js";
 export default {
   setup() {
     onMounted(() => {
-      getSpells()
+      // getSpells()
     });
-    async function getSpells() {
-      try {
-        await spellsService.getSpells();
-      } catch (error) {
-        Pop.error(error, "[getSpells]");
-      }
-    }
+    // async function getSpells() {
+    //   try {
+    //     await spellsService.getSpells();
+    //   } catch (error) {
+    //     Pop.error(error, "[getSpells]");
+    //   }
+    // }
     return {};
   },
 };
