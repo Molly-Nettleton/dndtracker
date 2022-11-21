@@ -9,6 +9,8 @@ public class Character : IHasCreator
   public string Race { get; set; }
   public string Background { get; set; }
   public AbilityScore AbilityScore { get; set; }
+
+  // Populated
   public string CreatorId { get; set; }
   public Profile Creator { get; set; }
   public int Id { get; set; }
