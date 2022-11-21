@@ -20,6 +20,9 @@
           <router-link :to="{ name: 'Spells' }" class="btn text-success lighten-30 selectable text-uppercase">
             Spells
           </router-link>
+          <button class="btn btn-outline-success lighten-30 selectable text-uppercase" data-bs-toggle="modal" data-bs-target="#characterForm">
+            Create Character
+          </button>
         </li>
       </ul>
       <!-- LOGIN COMPONENT HERE -->
