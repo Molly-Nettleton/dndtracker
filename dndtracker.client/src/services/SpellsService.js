@@ -14,8 +14,7 @@ class SpellsService {
     console.log(spell);
     const res = await DND.get(`api/spells/${spell}`)
     console.log(res.data);
-    // AppState.activeSpell = new SpellDetail(res.data)
-    console.log(AppState.activeSpell)
+    AppState.activeSpell = new SpellDetail(res.data)
   }
 }
 export const spellsService = new SpellsService();
