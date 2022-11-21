@@ -2,12 +2,12 @@
 <div class="modal-body">
   <form @submit.prevent="createCharacter()">
 <div class="form-floating mb-3">
-  <input type="name" class="form-control" id="floatingInput" placeholder="name@example.com">
-  <label for="floatingInput">name</label>
+  <input type="text" class="form-control" id="floatingName" placeholder="name">
+  <label for="floatingName">name</label>
 </div>
 <div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-  <label for="floatingPassword">Password</label>
+  <input type="num" class="form-control" id="floatingLevel" placeholder="Level">
+  <label for="floatingLevel">Level</label>
 </div>
     
     <button class="btn btn-outline-success" type="submit"></button>
