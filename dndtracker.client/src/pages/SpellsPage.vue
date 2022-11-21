@@ -4,7 +4,7 @@
       <section class="start-bar bg-dark text-light overflow-auto">
         <h4 class="p-3">Spells</h4>
         <div id="dnd-spells" v-for="s in spells">
-          {{ s.name }}
+          <span @click="getSpellDetails()">{{ s.name }}</span>
         </div>
       </section>
       <section class="main-content p-3">
@@ -26,11 +26,18 @@
 import { computed } from "@vue/reactivity";
 import { onMounted } from "vue";
 import { AppState } from "../AppState.js";
+import { Spell } from "../models/Spell.js";
 import { spellsService } from "../services/SpellsService.js";
 import Pop from "../utils/Pop.js";
 
 export default {
-  setup() {
+  props: {
+    spell: {
+      type: Spell,
+      required: true,
+    }
+  },
+  setup(props) {
     onMounted(() => {
       getSpells()
     });
@@ -42,7 +49,16 @@ export default {
       }
     }
     return {
-      spells: computed(() => AppState.spells)
+      spells: computed(() => AppState.spells),
+
+      async getSpellDetails() {
+        try {
+          await spellsService.getSpellDetails(props.spell.id)
+        } catch (error) {
+          console.error('[]', error)
+          Pop.error(error)
+        }
+      }
     };
   },
 };

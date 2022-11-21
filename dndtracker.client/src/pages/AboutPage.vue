@@ -8,7 +8,7 @@
 import { computed } from "@vue/reactivity";
 import { onMounted } from "vue";
 import { AppState } from "../AppState.js";
-import SpellCard from "../components/SpellCard.vue";
+import SpellCard from "../components/ActiveSpellCard.vue";
 import { spellsService } from "../services/SpellsService.js";
 import Pop from "../utils/Pop.js";
 
