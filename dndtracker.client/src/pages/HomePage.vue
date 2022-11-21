@@ -1,18 +1,25 @@
 <template>
-  <div
-    class="home flex-grow-1 d-flex flex-column align-items-center justify-content-center"
-  >
-    <div class="home-card p-5 bg-white rounded elevation-3">
-      <img
-        src="https://bcw.blob.core.windows.net/public/img/8600856373152463"
-        alt="CodeWorks Logo"
-        class="rounded-circle"
-      />
-      <h1 class="my-5 bg-dark text-white p-3 rounded text-center">
-        Vue 3 Starter
-      </h1>
+
+
+<section class="container">
+  <div class="pt-md-5 pt-3 pb-4 ">
+    <div class="masonrycol">
+      <div class="d-flex align-items-center">
+        <div class="card bg-dark text-white border border-0 elevation-5 hoverable my-2 hover">
+          <img src="src\assets\img\class-icons\Class Icon - Wizard.svg" class="card-img" alt="...">
+          <div class="card-img-overlay d-flex align-items-end justify-content-between">
+            <div class="card-title fontbg fs-3 fw-bold text-lowercase">
+              <span class="title">character name</span>
+            </div>
+            <img src="src\assets\img\class-icons\Class Icon - Sorcerer.svg" height="40" width="40"
+              class="rounded-circle elevation-2 userpic border border-2 border-solid border-white" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</section>
+
 </template>
 
 <script>
