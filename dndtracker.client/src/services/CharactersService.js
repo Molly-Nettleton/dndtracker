@@ -3,10 +3,10 @@ import { Character } from "../models/Character.js";
 import { api } from "./AxiosService.js";
 
 class CharactersService {
-  async addCharacter(data) {
+  async createCharacter(data) {
     const res = api.post("api/characters", data);
-
-    AppState.characters.push(new Character(res.data));
+console.log(res.data);
+    // AppState.characters.push(new Character(res.data));
   }
 
   async editCharacter(data){

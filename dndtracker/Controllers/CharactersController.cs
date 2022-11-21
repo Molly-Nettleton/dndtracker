@@ -1,14 +1,16 @@
 namespace dndtracker.Controllers;
 [ApiController]
 [Route("api/[controller]")]
-public class CharactersController : IController
+public class CharactersController  : ControllerBase
 {
-  protected readonly CharactersService _cs;
-  public CharactersController(Auth0Provider auth0Provider) : base(auth0Provider)
+  private readonly CharactersService _cs;
+  private readonly Auth0Provider _auth0Provider;
+
+  public CharactersController(CharactersService cs, Auth0Provider auth0Provider)
   {
+    _cs = cs;
+    _auth0Provider = auth0Provider;
   }
-
-
 
   [HttpPost]
   [Authorize]

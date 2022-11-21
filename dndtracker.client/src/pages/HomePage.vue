@@ -24,7 +24,7 @@
         <div class="card charcard bg-dark text-white border border-0 elevation-5 hoverable hover ms-4">
           <img src="src\assets\img\character-images\ren.png" class="card-img rounded-0 rounded-top" alt="...">
           <div class="card-footer d-flex justify-content-between bg-dark">
-            <div class="card-title fontbg fs-3 fw-bold text-lowercase">
+            <div class="card-title fontbg fs-3 fw-bold text-lowercase border-0">
               <span class="title">Ren</span>
             </div>
             <div class="d-flex align-items-center">
