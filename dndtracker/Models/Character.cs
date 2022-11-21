@@ -6,7 +6,8 @@ public class Character : IHasCreator
   public int Level { get; set; }
   public int Hp { get; set; }
   public string img { get; set; }
-  public string[] Classes { get; set; }
+  public string Classes { get; set; }
+  public string SecondClass { get; set; }
   public string[] SubClasses { get; set; }
   public string Race { get; set; }
   public AbilityScores AbilityScores { get; set; }

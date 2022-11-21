@@ -15,3 +15,4 @@ global using dndtracker.Repositories;
 global using dndtracker.Services;
 global using dndtracker.Models;
 global using dndtracker.Interfaces;
+global using dndtracker.Enums;
