@@ -3,9 +3,14 @@ export class Character {
     this.id = data.id;
     this.name = data.name;
     this.level = data.level;
+    this.img = data.img;
     this.classes = data.classes;
+    this.race = data.race;
     this.subclasses = data.subclasses;
     this.spells = data.spells;
+    this.abilityScores=data.abilityScores
+    this.background=data.background
+
   }
 }
 //be able to add higher level spells to be added once you reach that level
