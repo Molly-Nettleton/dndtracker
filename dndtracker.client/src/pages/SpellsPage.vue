@@ -53,7 +53,7 @@ export default {
 
       async getSpellDetails() {
         try {
-          await spellsService.getSpellDetails(props.spell.id)
+          await spellsService.setActiveSpell(props.spell.name)
         } catch (error) {
           console.error('[]', error)
           Pop.error(error)

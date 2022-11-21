@@ -1,5 +1,6 @@
 import { AppState } from "../AppState.js";
 import { Spell } from "../models/Spell.js";
+import { SpellDetail } from "../models/SpellDetail.js";
 import { api, DND } from "./AxiosService.js";
 
 class SpellsService {
@@ -10,8 +11,8 @@ class SpellsService {
   }
 
   async setActiveSpell(spell) {
-    await api.get(`api/spells/${spell.id}`)
-    AppState.activeSpell = spell
+    const res = await api.get(`api/spells/${spell}`)
+    AppState.activeSpell = new SpellDetail(res.data)
     console.log(AppState.activeSpell)
   }
 }
