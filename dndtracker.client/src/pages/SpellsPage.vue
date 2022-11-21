@@ -1,19 +1,22 @@
 <template>
   <div class="container-fluid">
     <main class="row">
-      <section class=" col-md-2 start-bar bg-dark text-light overflow-auto">
+      <section class=" col-md-2  bg-dark text-light ">
         <h4 class="p-3">Spells</h4>
-        <div id="dnd-spells" v-for="s in spells">
-          <span @click="getSpellDetails(s)">{{ s?.name }}</span>
+        <div class="start-bar"> 
+
+          <div id="dnd-spells" v-for="s in spells" class="hover selectable p-1 rounded">
+            <span @click="getSpellDetails(s)" class="">{{ s?.name }}</span>
+          </div>
         </div>
       </section>
       
-      <section class=" col-md-6 main-content start-bar  d-flex align-items-center justify-content-center">
+      <section class=" col-md-6 main-content  p-3 d-flex align-items-center justify-content-center">
         <div id="active-spell">
           <ActiveSpellCard />
         </div>
       </section>
-      <section class="col-md-2 end-bar start-bar  bg-dark text-light flex-grow-1 spellbook">
+      <section class="col-md-2 end-bar bg-dark text-light flex-grow-1 spellbook">
         <h4 class="p-3 ">Your Spells 📖 <span id="spell-count"></span></h4>
         <div id="spell-slots">
 
@@ -65,7 +68,8 @@ export default {
 
 <style lang="scss" scoped>
 .start-bar {
-  height: 649px
+  height: 91.9vh;
+  overflow-y:auto;
 }
 
 .spellbook {

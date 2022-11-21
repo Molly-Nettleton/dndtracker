@@ -28,15 +28,18 @@
         </div>
       </div>
       <div class="col-6 text-center">
-        <div class="bg-white">
+        <div class="bg-white ">
           <h5 class="text-danger">Duration</h5>
           <p class="text-dark">{{ spell?.duration }}</p>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <p class="bg-white text-dark p-2 mb-0" v-for="p in spell.desc">{{ p }}</p>
+    <div class="row ">
+      <div class="col-12 ">
+        <div class="scrollY">
+
+          <p class="bg-white text-dark p-2 mb-0 " v-for="p in spell.desc">{{ p }}</p>
+        </div>
         <div class="col-12 text-center text-white">
           <p class="mb-0">At Higher Levels</p>
         </div>
@@ -65,6 +68,11 @@ export default {
 
 
 <style lang="scss" scoped>
+
+.scrollY{
+  height: 300px;
+  overflow-y: auto;
+}
 .spellcard{
 width: 600px;
 }
