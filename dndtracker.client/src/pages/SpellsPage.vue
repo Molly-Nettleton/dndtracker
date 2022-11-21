@@ -6,12 +6,12 @@
         <div class="start-bar"> 
 
           <div id="dnd-spells" v-for="s in spells" class="hover selectable p-1 rounded">
-            <span @click="getSpellDetails(s)" class="">{{ s?.name }}</span>
+            <span @click="getSpellDetails(s)" class=" ">{{ s?.name }}</span>
           </div>
         </div>
       </section>
       
-      <section class=" col-md-6 main-content  p-3 d-flex align-items-center justify-content-center">
+      <section class=" col-md-8 main-content  p-3 d-flex align-items-center justify-content-center">
         <div id="active-spell">
           <ActiveSpellCard />
         </div>
@@ -68,7 +68,7 @@ export default {
 
 <style lang="scss" scoped>
 .start-bar {
-  height: 91.9vh;
+  height: 83.2vh;
   overflow-y:auto;
 }
 
