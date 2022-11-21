@@ -1,24 +1,60 @@
 <template>
-
-
-<section class="container">
-  <div class="pt-md-5 pt-3 pb-4 ">
-    <div class="masonrycol">
+  <section class="container">
+    <div class="pt-md-5 pt-2 pb-4">
       <div class="d-flex align-items-center">
-        <div class="card bg-dark text-white border border-0 elevation-5 hoverable my-2 hover">
-          <img src="src\assets\img\class-icons\Class Icon - Wizard.svg" class="card-img" alt="...">
-          <div class="card-img-overlay d-flex align-items-end justify-content-between">
+
+
+
+        <div class="card charcard bg-dark text-white border border-0 elevation-5 hoverable hover ms-4">
+          <img src="src\assets\img\character-images\PRLGmBW.png" class="card-img rounded-0 rounded-top" alt="...">
+          <div class="card-footer d-flex justify-content-between bg-dark">
             <div class="card-title fontbg fs-3 fw-bold text-lowercase">
-              <span class="title">character name</span>
+              <span class="title">Imogen</span>
             </div>
-            <img src="src\assets\img\class-icons\Class Icon - Sorcerer.svg" height="40" width="40"
-              class="rounded-circle elevation-2 userpic border border-2 border-solid border-white" alt="">
+            <div class="d-flex align-items-center">
+              <img src="src\assets\img\class-icons\Class Icon - Warlock.svg" height="40" width="40"
+                class="rounded-circle elevation-2 border border-2 bg-white ms-1" alt="">
+              <img src="src\assets\img\class-icons\Class Icon - Rogue.svg" height="40" width="40"
+                class="rounded-circle elevation-2 border border-2 bg-white ms-1" alt="">
+            </div>
           </div>
         </div>
+
+
+        <div class="card charcard bg-dark text-white border border-0 elevation-5 hoverable hover ms-4">
+          <img src="src\assets\img\character-images\ren.png" class="card-img rounded-0 rounded-top" alt="...">
+          <div class="card-footer d-flex justify-content-between bg-dark">
+            <div class="card-title fontbg fs-3 fw-bold text-lowercase">
+              <span class="title">Ren</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="src\assets\img\class-icons\Class Icon - Paladin.svg" height="40" width="40"
+                class="rounded-circle elevation-2 border border-2 bg-white ms-1" alt="">
+              <img src="src\assets\img\class-icons\Class Icon - Warlock.svg" height="40" width="40"
+                class="rounded-circle elevation-2 border border-2 bg-white ms-1" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="card charcard bg-dark text-white border border-0 elevation-5 hoverable hover ms-4">
+          <img src="src\assets\img\character-images\28bPgSa.png" class="card-img rounded-0 rounded-top" alt="...">
+          <div class="card-footer d-flex justify-content-between bg-dark">
+            <div class="card-title fontbg fs-3 fw-bold text-lowercase">
+              <span class="title">Calith</span>
+            </div>
+            <div class="d-flex align-items-center">
+              <img src="src\assets\img\class-icons\Class Icon - Wizard.svg" height="40" width="40"
+                class="rounded-circle elevation-2 border border-2 bg-white ms-1" alt="">
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
+
     </div>
-  </div>
-</section>
+  </section>
 
 </template>
 
@@ -44,23 +80,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.home {
-  display: grid;
-  height: 80vh;
-  place-content: center;
-  text-align: center;
-  user-select: none;
-
-  .home-card {
-    width: 50vw;
-
-    > img {
-      height: 200px;
-      max-width: 200px;
-      width: 100%;
-      object-fit: contain;
-      object-position: center;
-    }
-  }
+.charcard {
+  height: 250px;
+  width: 250px;
 }
 </style>
