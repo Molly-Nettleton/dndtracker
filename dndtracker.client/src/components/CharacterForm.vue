@@ -135,13 +135,13 @@ export default {
       choices: computed(() => AppState.classChoices),
       async createCharacter() {
         try {
-          editable.value.classes = [
-            editable.value.classes,
-            editable.value.secondClass,
-          ];
+          editable.value.classes = (editable.value.classes +','+
+            editable.value.secondClass).toString()
+            
+          
           delete editable.value.secondClass;
-          // console.log(editable.value);
-          await charactersService.createCharacter(editable.value);
+          console.log(editable.value);
+          // await charactersService.createCharacter(editable.value);
         } catch (error) {
           Pop.error(error, "[createCharacter]");
         }
