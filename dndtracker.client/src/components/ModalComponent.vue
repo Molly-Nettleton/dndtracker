@@ -6,7 +6,7 @@
     aria-labelledby="exampleModalLabel"
     aria-hidden="true"
   >
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
         <slot></slot>
       </div>
@@ -36,4 +36,14 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.modal {
+  background: rgb(144, 119, 160);
+  background: linear-gradient(
+    90deg,
+    rgb(51, 3, 80) 0%,
+    rgba(44, 42, 5, 0.67) 100%
+  );
+  backdrop-filter: blur(4px);
+}
+</style>

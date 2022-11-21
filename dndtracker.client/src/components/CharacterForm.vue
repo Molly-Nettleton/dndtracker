@@ -1,6 +1,21 @@
 <template>
   <div class="modal-body">
-    <form @submit.prevent="createCharacter()">
+
+    <div class="row">
+      <div class="col-md-6 d-flex justify-content-center mt-5 ">
+        <div class="card charcard ">
+          <img :src="editable.img" alt="" class="rounded-top elevation-3  ">
+<div class="card-body bg-dark rounded-bottom">
+  <p class="fontbg fs-3 fw-bold text-lowercase">
+    {{editable.name}}
+
+
+  </p>
+</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+  <form @submit.prevent="createCharacter()">
       <div class="form-floating mb-2">
         <input
           type="text"
@@ -93,6 +108,9 @@
         Create Character
       </button>
     </form>
+      </div>
+    </div>
+  
   </div>
 </template>
 
@@ -133,4 +151,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+.charcard {
+  height: 250px;
+  width: 250px;
+}
+</style>
