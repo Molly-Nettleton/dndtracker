@@ -18,6 +18,35 @@ export class SpellDetail {
     this.attack_type = data.attack_type;
     this.damage = data.damage;
     this.school = data.school;
+    for (const s  of data.school) {
+      if (s.index == "abjuration") {
+        s.color= 'bg-abjuration'
+      }
+      if (s.index == "conjuration") {
+        s.color = 'bg-conjuration'
+      }
+      if (s.index == "divination") {
+        s.color = 'bg-divination'
+      }
+      if (s.index == "conjuration") {
+        s.color = 'bg-conjuration'
+      }
+      if (s.index == "enchantment") {
+        s.color = 'bg-enchantment'
+      }
+      if (s.index == "evocation") {
+        s.color = 'bg-evocation'
+      }
+      if (s.index == "illusion") {
+        s.color = 'bg-illusion'
+      }
+      if (s.index == "necromancy") {
+        s.color = 'bg-necromancy'
+      }
+      if (s.index == "transmutation") {
+        s.color = 'bg-transmutation'
+      }
+    }
     this.classes = data.classes;
     this.subclasses = data.subclasses;
   }

@@ -7,6 +7,7 @@
           <span @click="getSpellDetails(s)">{{ s.name }}</span>
         </div>
       </section>
+      
       <section class=" col-md-6 main-content p-3 d-flex align-items-center justify-content-center">
         <div id="active-spell">
           <ActiveSpellCard />
