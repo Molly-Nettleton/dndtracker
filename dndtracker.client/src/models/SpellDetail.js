@@ -18,35 +18,35 @@ export class SpellDetail {
     this.attack_type = data.attack_type;
     this.damage = data.damage;
     this.school = data.school;
-    for (const s  of data.school) {
-      if (s.index == "abjuration") {
-        s.color= 'bg-abjuration'
-      }
-      if (s.index == "conjuration") {
-        s.color = 'bg-conjuration'
-      }
-      if (s.index == "divination") {
-        s.color = 'bg-divination'
-      }
-      if (s.index == "conjuration") {
-        s.color = 'bg-conjuration'
-      }
-      if (s.index == "enchantment") {
-        s.color = 'bg-enchantment'
-      }
-      if (s.index == "evocation") {
-        s.color = 'bg-evocation'
-      }
-      if (s.index == "illusion") {
-        s.color = 'bg-illusion'
-      }
-      if (s.index == "necromancy") {
-        s.color = 'bg-necromancy'
-      }
-      if (s.index == "transmutation") {
-        s.color = 'bg-transmutation'
-      }
+
+    if (data.school.index == "abjuration") {
+      data.school.color = "bg-abjuration";
     }
+    if (data.school.index == "conjuration") {
+      data.school.color = "bg-conjuration";
+    }
+    if (data.school.index == "divination") {
+      data.school.color = "bg-divination";
+    }
+    if (data.school.index == "conjuration") {
+      data.school.color = "bg-conjuration";
+    }
+    if (data.school.index == "enchantment") {
+      data.school.color = "bg-enchantment";
+    }
+    if (data.school.index == "evocation") {
+      data.school.color = "bg-evocation";
+    }
+    if (data.school.index == "illusion") {
+      data.school.color = "bg-illusion";
+    }
+    if (data.school.index == "necromancy") {
+      data.school.color = "bg-necromancy";
+    }
+    if (data.school.index == "transmutation") {
+      data.school.color = "bg-transmutation";
+    }
+
     this.classes = data.classes;
     this.subclasses = data.subclasses;
   }
