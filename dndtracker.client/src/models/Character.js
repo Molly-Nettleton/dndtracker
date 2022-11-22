@@ -1,3 +1,5 @@
+import { AppState } from "../AppState.js";
+
 export class Character {
   constructor(data) {
     this.id = data.id;
@@ -5,9 +7,10 @@ export class Character {
     this.level = data.level;
     this.img = data.img;
     this.classes = data.classes;
+   
     this.race = data.race;
     this.subclasses = data.subclasses;
-    this.abilityScores=data.abilityScores
+    // this.abilityScores=data.abilityScores
     this.background=data.background
 
   }

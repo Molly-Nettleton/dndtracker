@@ -2,9 +2,9 @@
   <div class="modal-body">
 
     <div class="row">
-      <div class="col-md-6 d-flex justify-content-center mt-5 ">
-        <div class="card charcard ">
-          <img :src="editable.img" alt="" class="rounded-top elevation-3  ">
+      <div class="col-md-6 d-flex justify-content-center  " >
+        <div class="card  ">
+          <img :src="editable.img" alt="" class="rounded-top elevation-3 img-fluid ">
 <div class="card-body bg-dark rounded-bottom">
   <p class="fontbg fs-3 fw-bold text-lowercase">
     {{editable.name}}
@@ -135,13 +135,13 @@ export default {
       choices: computed(() => AppState.classChoices),
       async createCharacter() {
         try {
-          editable.value.classes = [
-            editable.value.classes,
-            editable.value.secondClass,
-          ];
+          editable.value.classes = (editable.value.classes +','+
+            editable.value.secondClass).toString()
+            
+          
           delete editable.value.secondClass;
-          // console.log(editable.value);
-          await charactersService.createCharacter(editable.value);
+          console.log(editable.value);
+          // await charactersService.createCharacter(editable.value);
         } catch (error) {
           Pop.error(error, "[createCharacter]");
         }

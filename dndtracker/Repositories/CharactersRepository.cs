@@ -14,11 +14,10 @@ public class CharactersRepository : BaseRepository
               level,
               hp,
               img,
-              mainClass,
-              secondClass,
-              subclasses,
+              classes,
+              secondClasses,
+              subClass,
               race,
-              abilityScores,
               background,
               creatorId
              )
@@ -27,10 +26,10 @@ public class CharactersRepository : BaseRepository
               @Level,
               @Hp,
               @Img,
-              @MainClass,
-              @SecondClass,
+              @Classes,
+              @SecondClasses,
+              @SubClass,
               @Race,
-              @AbilityScores,
               @Background,
               @CreatorId
              );
